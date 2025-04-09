@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishisathi - Farmer's Companion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .active-tab {
+            border-bottom: 3px solid #4CAF50;
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-green-800 text-white shadow-lg">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <i class="fas fa-leaf text-2xl mr-2"></i>
+                    <span class="font-semibold text-xl">Krishisathi</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="py-2 px-3 rounded hover:bg-green-700">Home</a>
+                    <a href="#features" class="py-2 px-3 rounded hover:bg-green-700">Features</a>
+                    <a href="#about" class="py-2 px-3 rounded hover:bg-green-700">About</a>
+                    <a href="#contact" class="py-2 px-3 rounded hover:bg-green-700">Contact</a>
+                </div>
+                <button class="md:hidden focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Empowering Farmers, Nourishing Nations</h1>
+            <p class="text-xl md:text-2xl mb-8">Your complete digital companion for modern farming solutions</p>
+            <button class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300">
+                Get Started <i class="fas fa-arrow-right ml-2"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Our Features</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="feature-card bg-white rounded-lg shadow-md p-6 transition duration-300">
+                    <div class="text-green-600 mb-4">
+                        <i class="fas fa-seedling text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Crop Health Analysis</h3>
+                    <p class="text-gray-600">Upload images of your crops to get instant health analysis and disease solutions.</p>
+                    <button class="mt-4 text-green-600 font-medium hover:text-green-800">Try Now →</button>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card bg-white rounded-lg shadow-md p-6 transition duration-300">
+                    <div class="text-green-600 mb-4">
+                        <i class="fas fa-map-marked-alt text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Crop Recommendation</h3>
+                    <p class="text-gray-600">Get personalized crop suggestions based on your location, soil type, and weather conditions.</p>
+                    <button class="mt-4 text-green-600 font-medium hover:text-green-800">Explore →</button>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card bg-white rounded-lg shadow-md p-6 transition duration-300">
+                    <div class="text-green-600 mb-4">
+                        <i class="fas fa-users text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Community Chat</h3>
+                    <p class="text-gray-600">Connect with fellow farmers, share knowledge, and get updates on government schemes.</p>
+                    <button class="mt-4 text-green-600 font-medium hover:text-green-800">Join Now →</button>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card bg-white rounded-lg shadow-md p-6 transition duration-300">
+                    <div class="text-green-600 mb-4">
+                        <i class="fas fa-cloud-sun text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Weather Prediction</h3>
+                    <p class="text-gray-600">Accurate weather forecasts tailored to your farm's location for better planning.</p>
+                    <button class="mt-4 text-green-600 font-medium hover:text-green-800">Check Weather →</button>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="feature-card bg-white rounded-lg shadow-md p-6 transition duration-300">
+                    <div class="text-green-600 mb-4">
+                        <i class="fas fa-border-all text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Land Fragmentation</h3>
+                    <p class="text-gray-600">Optimize your land usage with smart fragmentation tools for maximum yield.</p>
+                    <button class="mt-4 text-green-600 font-medium hover:text-green-800">Plan Your Land →</button>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="feature-card bg-white rounded-lg shadow-md p-6 transition duration-300">
+                    <div class="text-green-600 mb-4">
+                        <i class="fas fa-tint text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Water Scarcity Solutions</h3>
+                    <p class="text-gray-600">Learn modern techniques to deal with water scarcity and optimize irrigation.</p>
+                    <button class="mt-4 text-green-600 font-medium hover:text-green-800">Learn More →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Details Section with Tabs -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">How It Works</h2>
+            
+            <div class="flex flex-wrap justify-center mb-8">
+                <button onclick="openTab('tab1')" class="tab-button active-tab px-6 py-2 font-medium">Crop Analysis</button>
+                <button onclick="openTab('tab2')" class="tab-button px-6 py-2 font-medium">Crop Recommendation</button>
+                <button onclick="openTab('tab3')" class="tab-button px-6 py-2 font-medium">Community</button>
+            </div>
+
+            <div id="tab1" class="tab-content">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <img src="https://images.unsplash.com/photo-1586771107445-d3ca888129ce?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Crop Analysis" class="rounded-lg shadow-lg">
+                    </div>
+                    <div class="md:w-1/2 md:pl-12">
+                        <h3 class="text-2xl font-semibold mb-4">Smart Crop Health Analysis</h3>
+                        <p class="text-gray-600 mb-4">Our advanced AI analyzes images of your crops to detect diseases, nutrient deficiencies, and pest infestations.</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>Instant diagnosis of common crop diseases</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>Personalized treatment recommendations</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span>Preventive measures for healthy crops</span>
+                            </li>
+                        </ul>
+                        <button class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-full transition duration-300">
+                            Upload Crop Images
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab2" class="tab-content hidden">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Crop Recommendation" class="rounded-lg shadow-lg">
+                    </div>
+                    <div class="md:w-1/2 md:pl-12">
+                        <h3 class="text-2xl font-semibold mb-4">Personalized Crop Recommendations</h3>
+                        <p class="text-gray-600 mb-4">Get the best crop suggestions based on your specific conditions and requirements.</p>
+                        <div class="mb-6">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-map-marker-alt text-green-500 mr-2"></i>
+                                <span>Enter your location:</span>
+                            </div>
+                            <input type="text" placeholder="Your location" class="w-full p-2 border rounded">
+                        </div>
+                        <div class="mb-6">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-temperature-high text-green-500 mr-2"></i>
+                                <span>Average temperature range:</span>
+                            </div>
+                            <div class="flex space-x-4">
+                                <input type="number" placeholder="Min (°C)" class="w-1/2 p-2 border rounded">
+                                <input type="number" placeholder="Max (°C)" class="w-1/2 p-2 border rounded">
+                            </div>
+                        </div>
+                        <button class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-full transition duration-300">
+                            Get Recommendations
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab3" class="tab-content hidden">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Community" class="rounded-lg shadow-lg">
+                    </div>
+                    <div class="md:w-1/2 md:pl-12">
+                        <h3 class="text-2xl font-semibold mb-4">Farmer's Community</h3>
+                        <p class="text-gray-600 mb-4">Connect with thousands of farmers across the country to share knowledge and experiences.</p>
+                        <div class="mb-6 p-4 bg-gray-100 rounded-lg">
+                            <div class="flex items-start mb-3">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" class="w-10 h-10 rounded-full mr-3">
+                                <div>
+                                    <h4 class="font-semibold">Rajesh Kumar</h4>
+                                    <p class="text-sm text-gray-500">Posted 2 hours ago</p>
+                                    <p class="text-gray-700 mt-1">Has anyone tried the new organic pest control method? I'm getting great results!</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User" class="w-10 h-10 rounded-full mr-3">
+                                <div>
+                                    <h4 class="font-semibold">Priya Sharma</h4>
+                                    <p class="text-sm text-gray-500">Posted 1 hour ago</p>
+                                    <p class="text-gray-700 mt-1">New government scheme for drip irrigation subsidies announced. Check the announcements section!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-full transition duration-300">
+                            Join Community
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">About Krishisathi</h2>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-2/3 mx-auto text-center">
+                    <h3 class="text-2xl font-semibold mb-4">Rishabh Yadav</h3>
+                    <p class="text-gray-600 mb-4">Founder & BTech Student</p>
+                    <p class="text-gray-700 mb-2">
+                        Currently pursuing BTech at Galgotias College of Engineering & Technology, Greater Noida
+                    </p>
+                    <p class="text-gray-700 mb-6">
+                        Krishisathi was created to bridge the gap between traditional farming and modern technology. My vision is to empower farmers with accessible tools that can transform agricultural practices across India.
+                    </p>
+                    <div class="space-y-2 mb-6">
+                        <div class="flex items-center justify-center">
+                            <i class="fas fa-envelope text-green-500 mr-2"></i>
+                            <span>rxishabh2025@gmail.com</span>
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <i class="fas fa-phone text-green-500 mr-2"></i>
+                            <span>8005110211</span>
+                        </div>
+                    </div>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-green-600 hover:text-green-800">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </a>
+                        <a href="mailto:rxishabh2025@gmail.com" class="text-green-600 hover:text-green-800">
+                            <i class="fas fa-envelope text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Contact Us</h2>
+            
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h3 class="text-xl font-semibold mb-4">Get in Touch</h3>
+                    <p class="text-gray-600 mb-6">Have questions or suggestions? We'd love to hear from you!</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-green-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-medium">Address</h4>
+                                <p class="text-gray-600">123 Farm Street, Agricultural Zone, India</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-phone-alt text-green-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-medium">Phone</h4>
+                                <p class="text-gray-600">+91 9876543210</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope text-green-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-medium">Email</h4>
+                                <p class="text-gray-600">contact@krishisathi.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 md:pl-12">
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-gray-700 mb-1">Name</label>
+                            <input type="text" id="name" class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-green-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 mb-1">Email</label>
+                            <input type="email" id="email" class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-green-500">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 mb-1">Message</label>
+                            <textarea id="message" rows="4" class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+                        </div>
+                        <button type="submit" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded transition duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center">
+                        <i class="fas fa-leaf text-2xl mr-2"></i>
+                        <span class="font-semibold text-xl">Krishisathi</span>
+                    </div>
+                    <p class="mt-2 text-green-200">Empowering farmers with technology</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-green-300">Home</a>
+                    <a href="#" class="hover:text-green-300">Features</a>
+                    <a href="#" class="hover:text-green-300">About</a>
+                    <a href="#" class="hover:text-green-300">Contact</a>
+                </div>
+            </div>
+            <div class="border-t border-green-700 mt-6 pt-6 text-center text-green-200">
+                <p>&copy; 2023 Krishisathi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Tab functionality
+        function openTab(tabId) {
+            // Hide all tab contents
+            const tabContents = document.getElementsByClassName('tab-content');
+            for (let i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.add('hidden');
+            }
+            
+            // Remove active class from all tab buttons
+            const tabButtons = document.getElementsByClassName('tab-button');
+            for (let i = 0; i < tabButtons.length; i++) {
+                tabButtons[i].classList.remove('active-tab');
+            }
+            
+            // Show the selected tab content and mark button as active
+            document.getElementById(tabId).classList.remove('hidden');
+            event.currentTarget.classList.add('active-tab');
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile menu toggle (would need additional CSS)
+        document.querySelector('.md\\:hidden').addEventListener('click', function() {
+            const menu = document.querySelector('.md\\:flex.space-x-8');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
